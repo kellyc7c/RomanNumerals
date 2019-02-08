@@ -155,6 +155,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual(romanNumeral, result);
         }
 
+        [Test]
+        public void Converting400ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(400);
+
+            Assert.AreEqual("CD", result);
+        }
+
 
     }
 }
