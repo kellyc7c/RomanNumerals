@@ -68,7 +68,7 @@ namespace Roman_Numerals.Tests
 
         [TestCase(7,"VII")]
         [TestCase(8, "VIII")]
-        public void ConvertingSevenAndEightToRomanNumeralsShouldReturnExpectedValue(int number, string romanNumeral)
+        public void ConvertingSevenAndEightToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
         {
             string result = RomanNumerals.ToRomanNumeral(number);
 
@@ -89,6 +89,17 @@ namespace Roman_Numerals.Tests
             string result = RomanNumerals.ToRomanNumeral(10);
 
             Assert.AreEqual("X", result);
+        }
+
+        [TestCase(11, "XI")]
+        [TestCase(14, "XIV")]
+        [TestCase(16, "XVI")]
+        [TestCase(19, "XIX")]
+        public void ConvertingElevenToNineteenToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
+        {
+            string result = RomanNumerals.ToRomanNumeral(number);
+
+            Assert.AreEqual(romanNumeral, result);
         }
 
     }
