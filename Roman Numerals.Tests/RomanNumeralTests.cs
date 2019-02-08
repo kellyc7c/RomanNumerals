@@ -145,6 +145,16 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("C", result);
         }
 
+        [TestCase(200, "CC")]
+        [TestCase(300, "CCC")]
+        [TestCase(399, "CCCXCIX")]
+        public void Converting200To399ToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
+        {
+            string result = RomanNumerals.ToRomanNumeral(number);
+
+            Assert.AreEqual(romanNumeral, result);
+        }
+
 
     }
 }
