@@ -58,5 +58,13 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("V", result);
         }
 
+        [Test]
+        public void ConvertingSixToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(6);
+
+            Assert.AreEqual("VI", result);
+        }
+
     }
 }
