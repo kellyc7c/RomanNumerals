@@ -113,5 +113,13 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual(romanNumeral, result);
         }
 
+        [Test]
+        public void Converting40ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(40);
+
+            Assert.AreEqual("XL", result);
+        }
+
     }
 }
