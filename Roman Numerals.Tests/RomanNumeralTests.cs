@@ -19,11 +19,19 @@ namespace Roman_Numerals.Tests
         }
 
         [Test]
-        public void ConvertingOneToRomanNumerlasShouldReturnExpectedValue()
+        public void ConvertingOneToRomanNumeralsShouldReturnExpectedValue()
         {
             string result = RomanNumerals.ToRomanNumeral(1);
 
             Assert.AreEqual("I", result);
+        }
+
+        [Test]
+        public void ConvertingTwoToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(2);
+
+            Assert.AreEqual("II", result);
         }
 
     }
