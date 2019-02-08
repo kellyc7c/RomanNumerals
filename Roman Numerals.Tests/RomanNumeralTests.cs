@@ -102,5 +102,16 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual(romanNumeral, result);
         }
 
+        [TestCase(20, "XX")]
+        [TestCase(25, "XXV")]
+        [TestCase(30, "XXX")]
+        [TestCase(39, "XXXIX")]
+        public void ConvertingTwentyToThirtyNineToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
+        {
+            string result = RomanNumerals.ToRomanNumeral(number);
+
+            Assert.AreEqual(romanNumeral, result);
+        }
+
     }
 }
