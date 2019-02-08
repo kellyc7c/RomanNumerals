@@ -18,5 +18,13 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("nulla", result);
         }
 
+        [Test]
+        public void ConvertingOneToRomanNumerlasShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(1);
+
+            Assert.AreEqual("I", result);
+        }
+
     }
 }
