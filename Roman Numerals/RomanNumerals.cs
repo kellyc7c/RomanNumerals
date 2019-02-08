@@ -14,6 +14,12 @@ namespace Roman_Numerals
 
             string romanNumeral = "";
 
+            if (number >= 40)
+            {
+                romanNumeral += "XL";
+                number -= 40;
+            }
+
             while (number >= 10)
             {
                 romanNumeral += "X";
