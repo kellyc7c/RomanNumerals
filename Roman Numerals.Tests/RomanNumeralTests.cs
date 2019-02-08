@@ -75,5 +75,13 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual(romanNumeral, result);
         }
 
+        [Test]
+        public void ConvertingNineToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(9);
+
+            Assert.AreEqual("IX", result);
+        }
+
     }
 }
