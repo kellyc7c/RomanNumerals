@@ -50,5 +50,13 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("IV", result);
         }
 
+        [Test]
+        public void ConvertingFiveToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(5);
+
+            Assert.AreEqual("V", result);
+        }
+
     }
 }
