@@ -11,7 +11,8 @@ namespace Roman_Numerals
         public static string ToRomanNumeral(int number)
         {
             if (number == 0) return "nulla";
-            if (number == 9) return "IX";
+            else if (number == 9) return "IX";
+            else if (number == 10) return "X";
 
             string romanNumeral = "";
 
