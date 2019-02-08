@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Roman_Numerals
 {
-    class RomanNumerals
+    public class RomanNumerals
     {
+        public static string ToRomanNumeral(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
