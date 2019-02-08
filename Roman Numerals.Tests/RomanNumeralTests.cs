@@ -129,5 +129,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("L", result);
         }
 
+        [Test]
+        public void Converting90ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(90);
+
+            Assert.AreEqual("XC", result);
+        }
+
+
     }
 }
