@@ -14,6 +14,12 @@ namespace Roman_Numerals
 
             string romanNumeral = "";
 
+            if (number >= 90)
+            {
+                romanNumeral += "XC";
+                number -= 90;
+            }
+
             if (number >= 50)
             {
                 romanNumeral += "L";
