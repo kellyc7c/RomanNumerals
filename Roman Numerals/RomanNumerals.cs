@@ -11,10 +11,22 @@ namespace Roman_Numerals
         public static string ToRomanNumeral(int number)
         {
             if (number == 0) return "nulla";
-            else if (number == 9) return "IX";
-            else if (number == 10) return "X";
 
             string romanNumeral = "";
+
+            if (number >= 10)
+            {
+                romanNumeral += "X";
+                number -= 10;
+            }
+
+            if (number >= 9)
+            {
+                romanNumeral += "IX";
+                number -= 9;
+            }
+
+
 
             if (number >= 5)
             {
@@ -26,7 +38,7 @@ namespace Roman_Numerals
             if (number == 1) romanNumeral += "I";
             else if (number == 2) romanNumeral += "II";
             else if (number == 3) romanNumeral += "III";
-            else if (number == 4) return "IV";
+            else if (number == 4) romanNumeral += "IV";
 
             return romanNumeral;
         }
