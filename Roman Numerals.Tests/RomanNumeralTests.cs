@@ -137,6 +137,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("XC", result);
         }
 
+        [Test]
+        public void Converting100ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(100);
+
+            Assert.AreEqual("C", result);
+        }
+
 
     }
 }
