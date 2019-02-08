@@ -14,7 +14,7 @@ namespace Roman_Numerals
 
             string romanNumeral = "";
 
-            if (number >= 10)
+            while (number >= 10)
             {
                 romanNumeral += "X";
                 number -= 10;
