@@ -171,6 +171,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("D", result);
         }
 
+        [Test]
+        public void Converting900ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(900);
+
+            Assert.AreEqual("CM", result);
+        }
+
 
     }
 }
