@@ -37,7 +37,7 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingThreeToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(2);
+            string result = RomanNumerals.ToRomanNumeral(3);
 
             Assert.AreEqual("III", result);
         }
