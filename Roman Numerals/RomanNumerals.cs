@@ -8,9 +8,11 @@ namespace Roman_Numerals
 {
     public class RomanNumerals
     {
-        public static string ToRomanNumeral(int v)
+        public static string ToRomanNumeral(int number)
         {
-            throw new NotImplementedException();
+            if (number == 0) return "nulla";
+
+            return "";
         }
     }
 }
