@@ -195,6 +195,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("CMLXXXVII", result);
         }
 
+        [Test]
+        public void Converting1000ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(1000);
+
+            Assert.AreEqual("M", result);
+        }
+
 
     }
 }
