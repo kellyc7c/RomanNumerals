@@ -203,6 +203,14 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("M", result);
         }
 
+        [Test]
+        public void Converting2000ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(2000);
+
+            Assert.AreEqual("MM", result);
+        }
+
 
     }
 }
