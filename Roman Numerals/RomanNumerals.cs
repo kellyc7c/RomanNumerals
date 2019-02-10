@@ -20,24 +20,24 @@ namespace Roman_Numerals
             
             processedRomanNumeral = "";
 
-            processRomanNumeral(1000, "M");
-            processRomanNumeral(900, "CM");
-            processRomanNumeral(500, "D");
-            processRomanNumeral(400, "CD");
-            processRomanNumeral(100, "C");
-            processRomanNumeral(90, "XC");
-            processRomanNumeral(50, "L");
-            processRomanNumeral(40, "XL");
-            processRomanNumeral(10, "X");
-            processRomanNumeral(9, "IX");
-            processRomanNumeral(5, "V");
-            processRomanNumeral(4, "IV");
-            processRomanNumeral(1, "I");
+            processMultipleOfNumberIntoRomanNumeral(1000,    "M");
+            processMultipleOfNumberIntoRomanNumeral(900,     "CM");
+            processMultipleOfNumberIntoRomanNumeral(500,     "D");
+            processMultipleOfNumberIntoRomanNumeral(400,     "CD");
+            processMultipleOfNumberIntoRomanNumeral(100,     "C");
+            processMultipleOfNumberIntoRomanNumeral(90,      "XC");
+            processMultipleOfNumberIntoRomanNumeral(50,      "L");
+            processMultipleOfNumberIntoRomanNumeral(40,      "XL");
+            processMultipleOfNumberIntoRomanNumeral(10,      "X");
+            processMultipleOfNumberIntoRomanNumeral(9,       "IX");
+            processMultipleOfNumberIntoRomanNumeral(5,       "V");
+            processMultipleOfNumberIntoRomanNumeral(4,       "IV");
+            processMultipleOfNumberIntoRomanNumeral(1,       "I");
 
             return processedRomanNumeral;
         }
 
-        private void processRomanNumeral(int romanNumeralInDecimal, string romanNumeral)
+        private void processMultipleOfNumberIntoRomanNumeral(int romanNumeralInDecimal, string romanNumeral)
         {
             while (remainingValueToConvert >= romanNumeralInDecimal)
             {
