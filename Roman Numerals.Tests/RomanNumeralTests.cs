@@ -179,6 +179,22 @@ namespace Roman_Numerals.Tests
             Assert.AreEqual("CM", result);
         }
 
+        [Test]
+        public void Converting950ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(950);
+
+            Assert.AreEqual("CML", result);
+        }
+
+        [Test]
+        public void Converting987ToRomanNumeralsShouldReturnExpectedValue()
+        {
+            string result = RomanNumerals.ToRomanNumeral(987);
+
+            Assert.AreEqual("CMLXXXVII", result);
+        }
+
 
     }
 }
