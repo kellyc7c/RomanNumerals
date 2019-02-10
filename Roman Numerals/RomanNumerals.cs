@@ -8,7 +8,11 @@ namespace Roman_Numerals
 {
     public class RomanNumerals
     {
-        public static string ToRomanNumeral(int number)
+        private int number;
+        private string romanNumeral;
+
+
+        public string ToRomanNumeral(int number)
         {
             if (number == 0) return "nulla";
 
@@ -90,5 +94,7 @@ namespace Roman_Numerals
 
             return romanNumeral;
         }
+
+
     }
 }

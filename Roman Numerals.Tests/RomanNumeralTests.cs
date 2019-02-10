@@ -13,7 +13,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingZeroToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(0);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(0);
 
             Assert.AreEqual("nulla", result);
         }
@@ -21,7 +23,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingOneToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(1);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(1);
 
             Assert.AreEqual("I", result);
         }
@@ -29,7 +33,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingTwoToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(2);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(2);
 
             Assert.AreEqual("II", result);
         }
@@ -37,7 +43,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingThreeToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(3);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(3);
 
             Assert.AreEqual("III", result);
         }
@@ -45,7 +53,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingFourToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(4);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(4);
 
             Assert.AreEqual("IV", result);
         }
@@ -53,7 +63,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingFiveToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(5);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(5);
 
             Assert.AreEqual("V", result);
         }
@@ -61,7 +73,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingSixToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(6);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(6);
 
             Assert.AreEqual("VI", result);
         }
@@ -70,7 +84,9 @@ namespace Roman_Numerals.Tests
         [TestCase(8, "VIII")]
         public void ConvertingSevenAndEightToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
         {
-            string result = RomanNumerals.ToRomanNumeral(number);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(number);
 
             Assert.AreEqual(romanNumeral, result);
         }
@@ -78,7 +94,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingNineToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(9);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(9);
 
             Assert.AreEqual("IX", result);
         }
@@ -86,7 +104,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void ConvertingTenToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(10);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(10);
 
             Assert.AreEqual("X", result);
         }
@@ -97,7 +117,9 @@ namespace Roman_Numerals.Tests
         [TestCase(19, "XIX")]
         public void ConvertingElevenToNineteenToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
         {
-            string result = RomanNumerals.ToRomanNumeral(number);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(number);
 
             Assert.AreEqual(romanNumeral, result);
         }
@@ -108,7 +130,9 @@ namespace Roman_Numerals.Tests
         [TestCase(39, "XXXIX")]
         public void ConvertingTwentyToThirtyNineToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
         {
-            string result = RomanNumerals.ToRomanNumeral(number);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(number);
 
             Assert.AreEqual(romanNumeral, result);
         }
@@ -116,7 +140,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting40ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(40);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(40);
 
             Assert.AreEqual("XL", result);
         }
@@ -124,7 +150,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting50ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(50);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(50);
 
             Assert.AreEqual("L", result);
         }
@@ -132,7 +160,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting90ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(90);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(90);
 
             Assert.AreEqual("XC", result);
         }
@@ -140,7 +170,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting100ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(100);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(100);
 
             Assert.AreEqual("C", result);
         }
@@ -150,7 +182,9 @@ namespace Roman_Numerals.Tests
         [TestCase(399, "CCCXCIX")]
         public void Converting200To399ToRomanNumeralsShouldReturnExpectedValues(int number, string romanNumeral)
         {
-            string result = RomanNumerals.ToRomanNumeral(number);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(number);
 
             Assert.AreEqual(romanNumeral, result);
         }
@@ -158,7 +192,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting400ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(400);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(400);
 
             Assert.AreEqual("CD", result);
         }
@@ -166,7 +202,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting500ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(500);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(500);
 
             Assert.AreEqual("D", result);
         }
@@ -174,7 +212,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting900ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(900);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(900);
 
             Assert.AreEqual("CM", result);
         }
@@ -182,7 +222,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting950ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(950);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(950);
 
             Assert.AreEqual("CML", result);
         }
@@ -190,7 +232,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting987ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(987);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(987);
 
             Assert.AreEqual("CMLXXXVII", result);
         }
@@ -198,7 +242,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting1000ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(1000);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(1000);
 
             Assert.AreEqual("M", result);
         }
@@ -206,7 +252,9 @@ namespace Roman_Numerals.Tests
         [Test]
         public void Converting2000ToRomanNumeralsShouldReturnExpectedValue()
         {
-            string result = RomanNumerals.ToRomanNumeral(2000);
+            RomanNumerals romanNumerals = new RomanNumerals();
+
+            string result = romanNumerals.ToRomanNumeral(2000);
 
             Assert.AreEqual("MM", result);
         }
